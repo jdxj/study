@@ -11,11 +11,12 @@ package main
 
 import (
 	"fmt"
+	"net"
+	"time"
+
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/peer"
 	"github.com/btcsuite/btcd/wire"
-	"net"
-	"time"
 )
 
 // mockRemotePeer creates a basic inbound peer listening on the simnet port for
@@ -105,7 +106,6 @@ func main() {
 	case <-time.After(time.Second * 1):
 		fmt.Printf("Example_peerConnection: verack timeout")
 	}
-
 
 	// Disconnect the peer.
 	p.Disconnect()
