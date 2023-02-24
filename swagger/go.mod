@@ -8,5 +8,5 @@ require (
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/swaggo/gin-swagger v1.2.0
 	github.com/swaggo/swag v1.6.3
-	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553 // indirect
+	golang.org/x/net v0.7.0 // indirect
 )
